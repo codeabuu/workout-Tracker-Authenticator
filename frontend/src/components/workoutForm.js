@@ -3,8 +3,8 @@ import { useWorkoutCon } from "../hooks/userWorkoutCon";
 import {useAuthCon} from '../hooks/useAuth'
 
 const WorkoutForm = () => {
-  const {user, } = useAuthCon()
   const {dispatch} = useWorkoutCon()
+  const {user} = useAuthCon()
   const [title, setTitle] = useState('')
   const [load, setLoad] = useState('')
   const [reps, setReps] = useState('')

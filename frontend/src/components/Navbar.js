@@ -17,16 +17,16 @@ const Navbar = () => {
 	  </Link>
 	  <nav>
 	  {user && (
-		  <div>
-	  <span>{user.email}</span>
-	  <button onClick={handleClick}>Log Out</button>
-	  </div>
+	    <div>
+	      <span>{user.email}</span>
+	      <button onClick={handleClick}>Log Out</button>
+	    </div>
 	  )}
 	  {!user && (
-	    <div>
-	      <Link to='/login'>Login</Link>
-	      <Link to ='/signup'>Signup</Link>
-	    </div>
+	     <div>
+	       <Link to='/login'>Login</Link>
+	       <Link to ='/signup'>Signup</Link>
+	     </div>
 	  )}
 	  </nav>
 	  </div>
